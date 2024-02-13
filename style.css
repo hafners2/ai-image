@@ -1,0 +1,75 @@
+@font-face {
+    font-family: poppins-light;
+    src: url('Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: poppins-med;
+    src: url('Poppins-Medium.ttf')
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    font-family: poppins-med;
+    width: 100%;
+}
+
+button {
+    font-family: poppins-light;
+    background-color: #F3CAE6;
+    border: solid 1px black;
+    padding: 6px;
+    border-radius: 18px;
+    width: 80px;
+}
+
+.resetBtn {
+    visibility: hidden;
+}
+
+
+.bottom {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    height: 3vh;
+    margin-right: 10px;
+}
+
+#top {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.images-container {
+    height: 400px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.image-container {
+    width: 40%;
+    height: 40%;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.waiting-response-html {
+    font-family: poppins-light;
+    padding-top: 20px;
+}
