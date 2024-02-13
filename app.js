@@ -1,4 +1,5 @@
-const apiKey = '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';
+//must utilize own generated openai api key 
+const apiKey = ' ';
 const submitBtn = document.querySelector('.submit');
 const inputElement = document.querySelector('.input');
 const imageSection = document.querySelector('.images-container');
