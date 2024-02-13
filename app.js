@@ -1,21 +1,26 @@
-const apiKey = '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';
+const apiKey = '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';
 const submitBtn = document.querySelector('.submit');
 const inputElement = document.querySelector('.input');
 const imageSection = document.querySelector('.images-container');
-const responseHTML = document.querySelector('.waiting-response-html');
+const responseContainer = document.querySelector('.waiting-response-html');
 const resetContainer = document.querySelector(".reset-container");
 const resetBtn = document.createElement("button");
+const loadingGif = document.createElement('div');
 
 resetBtn.classList.add("resetBtn");
 resetContainer.append(resetBtn);
 
+loadingGif.classList.add("loading");
+responseContainer.append(loadingGif);
+
 const generateImage = async () => {
-    responseHTML.innerHTML = "please wait for server to respond!"
+    
     const options = {
         method: "POST",
         headers: {
             "Authorization": "Bearer " + apiKey,
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "http://localhost:5500",
         },
         body: JSON.stringify({
             "prompt": inputElement.value,
@@ -30,7 +35,6 @@ const generateImage = async () => {
 
         
 
-        responseHTML.innerHTML = " ";
 
         /*
         resetBtn.innerHTML = "reset";

@@ -12,16 +12,20 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
+    height: 100vh;
+    background-image: url('ai-image-bgd.png');
+    background-size: cover;
 }
 
 header {
     font-family: poppins-med;
+    color: #ffffff;
     width: 100%;
 }
 
 button {
-    font-family: poppins-light;
-    background-color: #F3CAE6;
+    font-family: poppins-med;
+    background-color: #e17e8e;
     border: solid 1px black;
     padding: 6px;
     border-radius: 18px;
@@ -32,6 +36,11 @@ button {
     visibility: hidden;
 }
 
+.loading {
+    background-image: url('loading-gif.gif');
+    background-size: cover;
+    margin-top: 5%;
+}
 
 .bottom {
     width: 50%;
@@ -42,6 +51,9 @@ button {
 input {
     height: 3vh;
     margin-right: 10px;
+    border-radius: 18px;
+    height: 4vh;
+    padding-left: 15px;
 }
 
 #top {
