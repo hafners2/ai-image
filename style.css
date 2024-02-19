@@ -19,17 +19,18 @@ body {
 
 header {
     font-family: poppins-med;
+    font-size: 1.5vw;
     color: #ffffff;
     width: 100%;
 }
 
 button {
     font-family: poppins-med;
+    font-size: 2vw;
     background-color: #e17e8e;
     border: solid 1px black;
-    padding: 6px;
     border-radius: 18px;
-    width: 80px;
+    padding: 20px;
 }
 
 .resetBtn {
@@ -40,10 +41,12 @@ button {
     background-image: url('loading-gif.gif');
     background-size: cover;
     margin-top: 5%;
+    height: 15vh;
 }
 
 .bottom {
-    width: 50%;
+    width: 100%;
+    height: 60vh;
     margin: auto;
     text-align: center;
 }
@@ -52,8 +55,9 @@ input {
     height: 3vh;
     margin-right: 10px;
     border-radius: 18px;
-    height: 4vh;
+    padding: 20px;
     padding-left: 15px;
+    font-size: 2vw;
 }
 
 #top {
@@ -64,24 +68,26 @@ input {
 }
 
 .images-container {
-    height: 400px;
     width: 100%;
-    max-width: 400px;
+    max-width: 700px;
     margin: auto;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-bottom: 10px;
-}
-
-.image-container {
-    width: 40%;
-    height: 40%;
-    margin: 5px;
-    overflow: hidden;
 }
 
 .waiting-response-html {
     font-family: poppins-light;
     padding-top: 20px;
+}
+
+.image-container {
+    width: 48%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
 }

@@ -1,0 +1,4 @@
+To ensure images upload, make sure to include API key from (https://openai.com/). 
+You must have an account to utilize given API keys/generate photos.
+
+Paste API key on line 2 in app.js.
